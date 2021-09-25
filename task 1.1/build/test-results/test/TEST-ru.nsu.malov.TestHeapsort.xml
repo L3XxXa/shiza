@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.nsu.malov.TestHeapsort" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-25T05:10:08" hostname="DESKTOP-92AO041" time="0.029">
+  <properties/>
+  <testcase name="testnegelems()" classname="ru.nsu.malov.TestHeapsort" time="0.029"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

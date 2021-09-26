@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class TestHeapsort {
     @Test
-    public void testsortedarray() {
+    public void sort_sortedArray() {
         int ain[] = {1, 2, 3, 4, 5};
         int aout[] = {1, 2, 3, 4, 5};
         Heapsort heap = new Heapsort();
@@ -16,7 +16,7 @@ public class TestHeapsort {
     }
 
     @Test
-    public void testunsorted2elem() {
+    public void sort_unsortedArrayWithTwoElements() {
         int ain[] = {1, 4, 2, 3, 5,};
         int aout[] = {1, 2, 3, 4, 5};
         Heapsort heap = new Heapsort();
@@ -25,7 +25,7 @@ public class TestHeapsort {
     }
 
     @Test
-    public void testunsorted3elem() {
+    public void sort_unsortedArrayWithThreeElements() {
         int ain[] = {1, 3, 2, 4, 5};
         int aout[] = {1, 2, 3, 4, 5};
         Heapsort heap = new Heapsort();
@@ -34,7 +34,7 @@ public class TestHeapsort {
     }
 
     @Test
-    public void testunsortedarray() {
+    public void sort_unsortedArray() {
         int ain[] = {5, 4, 3, 2, 1};
         int aout[] = {1, 2, 3, 4, 5};
         Heapsort heap = new Heapsort();
@@ -43,7 +43,7 @@ public class TestHeapsort {
     }
 
     @Test
-    public void testnegelems() {
+    public void sort_arrayWithNegativeElements() {
         int ain[] = {-1, -4, -3, -2, 1};
         int aout[] = {-4, -3, -2, -1, 1};
         Heapsort heap = new Heapsort();

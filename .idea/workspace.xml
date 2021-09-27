@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="88510286-1ec4-4acb-a190-a5e4ab8bd41a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.idea/lab1.1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/OOP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/classes/java/main/ru/nsu/malov/Heapsort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/classes/java/test/ru/nsu/malov/SortTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/reports/tests/test/classes/ru.nsu.malov.SortTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/reports/tests/test/packages/ru.nsu.malov.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/test-results/test/TEST-ru.nsu.malov.SortTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/src/main/java/ru/nsu/malov/Heapsort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.1/src/test/java/ru/nsu/malov/SortTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1yi0jfbJKiQrqIaxQmzKga5Vzge" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Task 1.2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88510286-1ec4-4acb-a190-a5e4ab8bd41a" name="Changes" comment="" />
+      <created>1632719243415</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632719243415</updated>
+    </task>
+    <servers />
+  </component>
+</project>

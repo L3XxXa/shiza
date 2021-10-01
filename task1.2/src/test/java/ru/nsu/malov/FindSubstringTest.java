@@ -45,4 +45,16 @@ class FindSubstringTest {
         ArrayList<Integer> ans = new ArrayList<Integer>();
         assertEquals(res, ans);
     }
+    @Test
+    void findSubstring_verybigtext() throws IOException{
+        String filename = "input4.txt";
+        String sample = "BIG BROTHER";
+        char[] samplechar = sample.toCharArray();
+        reader = new FileReader(filename);
+        ArrayList<Integer> res = test.findSubstring(reader, samplechar);
+        ArrayList<Integer> ans = new ArrayList<>();
+        ans.add(438);
+        assertEquals(ans, res);
+
+    }
 }

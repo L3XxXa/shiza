@@ -4,9 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.Reader;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
-
+import java.lang.String;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FindSubstringTest {
@@ -32,8 +33,17 @@ class FindSubstringTest {
         reader = new FileReader(filename);
         ArrayList<Integer> res = test.findSubstring(reader, samplechar);
         ArrayList<Integer> ans = new ArrayList<Integer>();
-        ans.add(9);
-        assertEquals(res, ans);
+        String str = new String(Files.readAllBytes(Path.of(filename)));
+        System.out.println(str);
+        int c = str.indexOf(sample);
+        System.out.println(c);
+        if (c == -1){
+            assertEquals(res, ans);
+        }
+        else{
+            ans.add(c+1);
+            assertEquals(res, ans);
+        }
     }
     @Test
     void findSubstring_emptytext() throws IOException{
@@ -43,7 +53,19 @@ class FindSubstringTest {
         reader = new FileReader(filename);
         ArrayList<Integer> res = test.findSubstring(reader, samplechar);
         ArrayList<Integer> ans = new ArrayList<Integer>();
-        assertEquals(res, ans);
+        String str = new String(Files.readAllBytes(Path.of(filename)));
+        System.out.println(str);
+        int c = str.indexOf(sample);
+        System.out.println(c);
+        if (c == -1){
+            assertEquals(res, ans);
+        }
+        else{
+            ans.add(c+1);
+            assertEquals(res, ans);
+        }
+
+
     }
     @Test
     void findSubstring_verybigtext() throws IOException{
@@ -53,8 +75,17 @@ class FindSubstringTest {
         reader = new FileReader(filename);
         ArrayList<Integer> res = test.findSubstring(reader, samplechar);
         ArrayList<Integer> ans = new ArrayList<>();
-        ans.add(438);
-        assertEquals(ans, res);
+        String str = new String(Files.readAllBytes(Path.of(filename)));
+        System.out.println(str);
+        int c = str.indexOf(sample);
+        System.out.println(c);
+        if (c == -1){
+            assertEquals(res, ans);
+        }
+        else{
+            ans.add(c+1);
+            assertEquals(res, ans);
+        }
 
     }
 }

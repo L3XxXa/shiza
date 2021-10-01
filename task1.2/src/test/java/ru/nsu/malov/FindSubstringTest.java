@@ -35,4 +35,14 @@ class FindSubstringTest {
         ans.add(9);
         assertEquals(res, ans);
     }
+    @Test
+    void findSubstring_emptytext() throws IOException{
+        String filename = "input3.txt";
+        String sample = "hello";
+        char [] samplechar = sample.toCharArray();
+        reader = new FileReader(filename);
+        ArrayList<Integer> res = test.findSubstring(reader, samplechar);
+        ArrayList<Integer> ans = new ArrayList<Integer>();
+        assertEquals(res, ans);
+    }
 }

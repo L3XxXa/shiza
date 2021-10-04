@@ -32,8 +32,7 @@ public class FindSubstring {
         String sample;
         sample = scanner.nextLine();
         int samplelen = sample.length();
-        char[] samplechar = new char[samplelen];
-        samplechar = sample.toCharArray();
+        char[] samplechar = sample.toCharArray();
         try {
             file = new FileReader(filename, StandardCharsets.UTF_8);
             findSubstring(file, samplechar);
@@ -51,19 +50,17 @@ public class FindSubstring {
         char[] original = new char[originalsize];
         System.arraycopy(sample, 0, original, 0, samplesize);
         original[samplesize] = '$';
-//        System.out.println(original);
-        int i = 0, symbol = 0;
+        int i = 0;
+        int symbol = 0;
         symbol = file.read(buff);
         while (true) {
             if (symbol != -1) {
                 System.arraycopy(buff, 0, original, samplesize + 1, buffsize);
-//                System.out.println(original);
                 int[] res = new int[originalsize];
                 res = zFunc(original, originalsize);
                 int lastidx = 0;
                 for (int j = samplesize + 1; j < originalsize; j++) {
                     if (res[j] == samplesize) {
- //                       System.out.println("Found matching");
                         lastidx = j - (samplesize + 1);
                         result.add(lastidx + i * buffsize + 1);
                     }
@@ -73,29 +70,16 @@ public class FindSubstring {
                 }
                 int movei = lastidx + 2*samplesize;
                 System.arraycopy(original, movei, original, samplesize + 1, originalsize - movei);
-//                System.out.println(original);
                 symbol = file.read(buff);
                 if (symbol == -1) {
-//                    System.out.println("End");
                     break;
                 }
                 System.arraycopy(buff, 0, original, originalsize - lastidx - samplesize, lastidx + samplesize);
- //               System.out.println();
-                res = zFunc(original, originalsize);
-                for (int j = samplesize + 1; j < originalsize; j++) {
-                    if (res[j] == samplesize) {
-                        result.add(i * buffsize + lastidx + j + 2);
-  //                      System.out.println(i * buffsize + lastidx + j + 2);
-                    }
-                }
-                ++i;
-
             } else {
                 break;
             }
         }
         file.close();
-//        System.out.println(result);
         return result;
     }
 }

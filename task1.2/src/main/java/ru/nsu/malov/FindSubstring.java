@@ -23,22 +23,7 @@ public class FindSubstring {
                 r = i + a[i];
             }
         }
-        return (a);
-    }
-
-    public void fileOpener(String filename) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        FileReader file;
-        String sample;
-        sample = scanner.nextLine();
-        int samplelen = sample.length();
-        char[] samplechar = sample.toCharArray();
-        try {
-            file = new FileReader(filename, StandardCharsets.UTF_8);
-            findSubstring(file, samplechar);
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
-        }
+        return a;
     }
 
     public ArrayList<Integer> findSubstring(FileReader file, char[] sample) throws IOException {
@@ -68,13 +53,14 @@ public class FindSubstring {
                 for (int j = 0; j < buffsize; j++) {
                     buff[j] = '\0';
                 }
-                int movei = lastidx + 2*samplesize;
+                int movei = lastidx + 3 * samplesize + 1;
                 System.arraycopy(original, movei, original, samplesize + 1, originalsize - movei);
                 symbol = file.read(buff);
                 if (symbol == -1) {
                     break;
                 }
                 System.arraycopy(buff, 0, original, originalsize - lastidx - samplesize, lastidx + samplesize);
+
             } else {
                 break;
             }

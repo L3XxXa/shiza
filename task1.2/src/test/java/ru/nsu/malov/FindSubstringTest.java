@@ -21,7 +21,7 @@ class FindSubstringTest {
         String sample = "pirog";
         char[] samplechar = sample.toCharArray();
         reader = new FileReader(filename);
-        ArrayList<Integer> res = test.findSubstring(reader, samplechar);
+        ArrayList<Integer> res = test.findsub(reader, samplechar);
         ArrayList<Integer> ans = new ArrayList<Integer>();
         String str = new String(Files.readAllBytes(Path.of(filename)));
         int c = str.indexOf(sample);

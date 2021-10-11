@@ -32,27 +32,31 @@ class StackTest {
 
     @Test
     public void pushStack_popStack_smallStackToEmptyStack() {
-        Object[] pushStack = {34, 15};
-        stack.pushStack(pushStack);
-        Object[] res = stack.popStack(2);
-        Object[] ans = {34, 15};
-        assertArrayEquals(res, ans);
+        Stack<Integer> stack2 = new Stack<>();
+        stack2.push(34);
+        stack2.push(15);
+        stack.pushStack(stack2);
+        Assertions.assertEquals(15, stack.pop());
+        Assertions.assertEquals(34, stack.pop());
         Assertions.assertEquals(0, stack.count());
     }
 
     @Test
     public void pushStack_popStack_NotEmptyStack() {
+        Stack<Integer> stack2 = new Stack<>();
+        Iterator<Integer> iterator = stack.iterator();
         stack.push(12);
         stack.push(11);
-        stack.push(18);
-        Object[] pushStack = {34, 24};
-        stack.pushStack(pushStack);
-        Assertions.assertEquals(5, stack.count());
-        Object[] res = stack.popStack(stack.count());
-        Object[] ans = {12, 11, 18, 34, 24};
-        Assertions.assertArrayEquals(res, ans);
+        stack2.push(10);
+        stack2.push(9);
+        stack.pushStack(stack2);
+        Assertions.assertEquals(4, stack.count());
+        Stack<Integer> resStack = stack.popStack(4);
+        Assertions.assertEquals(9, resStack.pop());
+        Assertions.assertEquals(10, resStack.pop());
+        Assertions.assertEquals(11, resStack.pop());
+        Assertions.assertEquals(12, resStack.pop());
         Assertions.assertEquals(0, stack.count());
-
     }
 
     @Test

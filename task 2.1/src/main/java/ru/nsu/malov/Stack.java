@@ -4,13 +4,20 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 public class Stack<T> implements Iterable<T> {
-    int size = 0;
-    int stackcapacity = 10;
-    T[] stackarr;
+    private int size = 0;
+    private int stackCapacity = 10;
+    private T[] stackArr;
+    final private int  NEW_LENGTH = 2;
 
+    private void newSize(int newSize){
+        while (stackArr.length < newSize) {
+            stackArr = Arrays.copyOf(stackArr, stackArr.length * NEW_LENGTH);
+        }
+    }
 
+    @SuppressWarnings("uncheked")
     public Stack() {
-        stackarr = (T[]) new Object[stackcapacity];
+        stackArr = (T[]) new Object[stackCapacity];
     }
 
     public int count() {
@@ -18,20 +25,14 @@ public class Stack<T> implements Iterable<T> {
     }
 
     public void push(T x) {
-        int newsize = size + 1;
-        while (stackarr.length < newsize) {
-            stackarr = Arrays.copyOf(stackarr, stackarr.length * 2);
-        }
-        stackarr[size] = x;
+        newSize(size+1);
+        stackArr[size] = x;
         size++;
     }
 
     public void pushStack(Object[] stack) {
-        int stacksize = size+ stack.length;
-        while (stackarr.length < stacksize) {
-            stackarr = Arrays.copyOf(stackarr, stackarr.length * 2);
-        }
-        System.arraycopy(stack, 0, stackarr, size, stack.length);
+        newSize(size+stack.length);
+        System.arraycopy(stack, 0, stackArr, size, stack.length);
         size += stack.length;
     }
 
@@ -40,21 +41,18 @@ public class Stack<T> implements Iterable<T> {
             throw new IndexOutOfBoundsException();
         }
         size--;
-        return stackarr[size];
+        return stackArr[size];
     }
 
-    public Object[] popStack(int popsize) {
-        if (popsize > size || size < 0) {
+    public Object[] popStack(int popSize) {
+        if (popSize > size || size < 0) {
             throw new IndexOutOfBoundsException();
         }
-        Stack<T> stack = new Stack<>();
-        Object[] popstack = new Object[popsize];
-        while (stackarr.length < popsize) {
-            stackarr = Arrays.copyOf(stackarr, stackarr.length * 2);
-        }
-        System.arraycopy(stackarr, 0, popstack, 0, popsize);
-        size = size - popsize;
-        return popstack;
+        Object[] popStack = new Object[popSize];
+        newSize(popSize);
+        System.arraycopy(stackArr, 0, popStack, 0, popSize);
+        size = size - popSize;
+        return popStack;
     }
 
     @Override
@@ -69,7 +67,7 @@ public class Stack<T> implements Iterable<T> {
 
             @Override
             public T next() throws IndexOutOfBoundsException {
-                return stackarr[idx++];
+                return stackArr[idx++];
             }
         };
     }

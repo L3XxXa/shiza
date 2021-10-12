@@ -50,7 +50,7 @@ public class Stack<T> implements Iterable<T> {
         }
         newSize(popSize);
         Stack<T> stack2 = new Stack<>();
-        System.arraycopy(stackArr, 0, stack2.stackArr, 0, popSize);
+        System.arraycopy(stackArr, size-popSize, stack2.stackArr, 0, popSize);
         size = size - popSize;
         stack2.size = popSize;
         return stack2;
